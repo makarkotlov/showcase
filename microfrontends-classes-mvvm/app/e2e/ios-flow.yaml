@@ -1,0 +1,23 @@
+appId: com.demoapp
+---
+- launchApp
+- assertVisible: "Brand:  Audi Model:  e-tron 50 Quattro Version:  71 kWh"
+- assertVisible:
+    id: "search-bar"
+- swipe:
+    start: "50%,66%"
+    end: "55%,24%"
+    duration: 267
+- assertVisible: "Brand:  Audi Model:  e-tron Sportback 55 Quattro Version:  95 kWh"
+- tapOn:
+    id: "search-bar"
+- tapOn: "U"
+- tapOn:
+    id: "more"
+- tapOn: "5"
+- tapOn:
+    id: "Search"
+- tapOn: "Brand:  Aiways Model:  U5 Version:  63 kWh"
+- assertVisible: "Find out more"
+- tapOn: "Find out more"
+- assertVisible: "Fastned FAQ"

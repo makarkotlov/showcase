@@ -1,0 +1,58 @@
+{
+  "files": [
+    "src"
+  ],
+  "version": "1.0.0",
+  "main": "index.ts",
+  "types": "index.d.ts",
+  "name": "@demoapp/uikit",
+  "license": "UNLICENSED",
+  "description": "uikit for the app",
+  "scripts": {
+    "lint": "tsc --noEmit && eslint ./ --ext ts --ext tsx --max-warnings 0",
+    "test": "jest --coverage --detectOpenHandles",
+    "format": "prettier --write 'src/**/*.{js,ts,tsx}'"
+  },
+  "peerDependencies": {
+    "react": "^18.x",
+    "react-native": "^0.x"
+  },
+  "dependencies": {
+    "react": "^18.x",
+    "react-native": "^0.x",
+    "react-native-paper": "^5.x",
+    "react-native-safe-area-context": "^4.x",
+    "react-native-vector-icons": "^10.x"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.x",
+    "@babel/preset-env": "^7.x",
+    "@babel/runtime": "^7.x",
+    "@react-native/eslint-config": "^0.x",
+    "@react-native/metro-config": "^0.x",
+    "@tanstack/eslint-plugin-query": "^4.x",
+    "@testing-library/jest-native": "^5.x",
+    "@testing-library/react-native": "^12.x",
+    "@total-typescript/ts-reset": "^0.x",
+    "@tsconfig/react-native": "^3.x",
+    "@types/jest": "^29.x",
+    "@types/node": "^20.x",
+    "@types/react": "^18.x",
+    "@types/react-test-renderer": "^18.x",
+    "babel-jest": "^29.x",
+    "eslint": "^8.x",
+    "eslint-plugin-jest": "^27.x",
+    "eslint-plugin-prettier": "^5.x",
+    "eslint-plugin-react": "^7.x",
+    "eslint-plugin-react-hooks": "^4.x",
+    "eslint-plugin-unused-imports": "^3.x",
+    "jest": "^29.x",
+    "jest-fail-on-console": "^3.x",
+    "metro-react-native-babel-preset": "0.x",
+    "patch-package": "^7.x",
+    "prettier": "^3.x",
+    "react-test-renderer": "18.x",
+    "ts-jest": "^29.x",
+    "typescript": "5.x"
+  }
+}

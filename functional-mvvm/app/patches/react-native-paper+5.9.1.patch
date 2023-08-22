@@ -1,0 +1,21 @@
+diff --git a/node_modules/react-native-paper/src/components/Searchbar.tsx b/node_modules/react-native-paper/src/components/Searchbar.tsx
+index ed1b1e4..746114a 100644
+--- a/node_modules/react-native-paper/src/components/Searchbar.tsx
++++ b/node_modules/react-native-paper/src/components/Searchbar.tsx
+@@ -29,15 +29,11 @@ interface Style {
+   marginRight: number;
+ }
+ 
+-export type Props = React.ComponentPropsWithRef<typeof TextInput> & {
++export type Props = TextInputProps & {
+   /**
+    * Hint text shown when the input is empty.
+    */
+   placeholder?: string;
+-  /**
+-   * The value of the text input.
+-   */
+-  value: string;
+   /**
+    * Callback that is called when the text input's text changes.
+    */
